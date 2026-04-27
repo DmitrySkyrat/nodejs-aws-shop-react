@@ -1,38 +1,25 @@
-# React-shop-cloudfront
+# Task 2 (Serve SPA in AWS S3 and Cloudfront Services)
 
-This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
+This is frontend starter project for aws-developer mentoring program.
 
-- [Vite](https://vitejs.dev/) as a project bundler
-- [React](https://beta.reactjs.org/) as a frontend framework
-- [React-router-dom](https://reactrouterdotcom.fly.dev/) as a routing library
-- [MUI](https://mui.com/) as a UI framework
-- [React-query](https://react-query-v3.tanstack.com/) as a data fetching library
-- [Formik](https://formik.org/) as a form library
-- [Yup](https://github.com/jquense/yup) as a validation schema
-- [Vitest](https://vitest.dev/) as a test runner
-- [MSW](https://mswjs.io/) as an API mocking library
-- [Eslint](https://eslint.org/) as a code linting tool
-- [Prettier](https://prettier.io/) as a code formatting tool
-- [TypeScript](https://www.typescriptlang.org/) as a type checking tool
+- [S3 Bucket](http://react-shop-app-cdk-636160606609.s3-website-us-east-1.amazonaws.com/) S3 Bucket URL shows 403 Access Denied error.
+- [CloudFront](dp9cxy1jano58.cloudfront.net/) CloudFront URL is provided and opens a static website
 
-## Available Scripts
+## Work has been done
 
-### `start`
+S3 Bucket was created, Application was deployed, CloudFront Distribution and Invalidation created and configured by using AWS CDK. The Application can be built and deployed by running npm script commands.
 
-Starts the project in dev mode with mocked API on local environment.
+### `deploy`
 
-### `build`
+Builds the React application and deploys the entire AWS infrastructure (S3 bucket + CloudFront CDN) in one command.
 
-Builds the project for production in `dist` folder.
+### `cdk:deploy`
 
-### `preview`
+Deploys (or updates) the AWS CDK stack to your AWS account.
 
-Starts the project in production mode on local environment.
+### `cdk:destroy`
 
-### `test`, `test:ui`, `test:coverage`
-
-Runs tests in console, in browser or with coverage.
-
-### `lint`, `prettier`
-
-Runs linting and formatting for all files in `src` folder.
+Destroys (removes) all AWS infrastructure created by the CDK stack.
+- Deletes the S3 bucket (including all files)
+- Deletes the CloudFront distribution
+- Removes associated IAM roles and policies
