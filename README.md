@@ -1,5 +1,3 @@
-# Task 2 (Serve SPA in AWS S3 and Cloudfront Services)
-
 This is frontend starter project for aws-developer mentoring program.
 
 - [S3 Bucket](http://react-shop-app-cdk-636160606609.s3-website-us-east-1.amazonaws.com/) S3 Bucket URL shows 403 Access Denied error.
